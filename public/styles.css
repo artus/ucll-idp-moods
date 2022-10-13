@@ -1,0 +1,135 @@
+* {
+    font-family: sans-serif;
+}
+
+body > header {
+    background: dodgerblue;
+    color: white;
+    padding: 2em;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+body > header p {
+    font-weight: bold;
+}
+
+main {
+    background-color: #E7EEF7;
+    padding: 2em;
+}
+
+#moods-section {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
+
+@media (max-width: 60em) {
+    #moods-section {
+        flex-direction: column;
+    }
+}
+
+#moods-table {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+#moods-table header {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 10px;
+    padding: 0.2em;
+}
+
+#moods-table header > * {
+    flex: 1;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+    border-right: 2px solid black;
+}
+
+#moods-table header > *:last-of-type {
+    border-right: none;
+}
+
+#moods-table-data {
+    display: flex;
+    flex-direction: column;
+}
+
+#moods-table-data > div {
+    background-color: white;
+    padding: 0.2em;
+    display: flex;
+}
+
+#moods-table-data > div:nth-of-type(even) {
+    background-color: rgb(250, 250, 250);
+}
+
+#moods-table-data > div > p {
+    flex: 1;
+    text-align: center;
+}
+
+#moods-table-data > div:first-of-type {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#moods-table-data > div:last-of-type {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.custom-form {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: flex-start;
+    width: min(30em, 100%);
+}
+
+.custom-form label {
+    font-weight: bold;
+    color: rgb(68, 68, 68);
+}
+
+.custom-form input {
+    padding: 1em;
+    border: none;
+    border-radius: 5px;
+    width: calc(100% - 2em);
+}
+
+.custom-form button {
+    padding: 0.8em;
+    border: 0;
+    background-color: dodgerblue;
+    color: white;
+    font-weight: bolder;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#moods-form-button:hover {
+    background-color: rgb(93, 174, 255);
+}
+
+
+footer {
+    padding: 2em;
+    background-color: dodgerblue;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: white;
+    font-weight: bold;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello International Digital Project!</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>Hello International Digital Project</h1>
+    <p>Easily keep track of your moods.</p>
+  </header>
+  <main>
+    <section id="name-section">
+      <section id="name-form" class="custom-form">
+        <label for="name-form-input">What is your name?</label>
+        <input id="name-form-input">
+        <button id="name-form-button">Log in!</button>
+      </section>
+    </section>
+    <section id="moods-section">
+      <section id="moods-form" class="custom-form">
+        <label for="moods-form-input">How are you feeling today?</label>
+        <input id="moods-form-input">
+        <input id="moods-form-range" type="range" min="0" max="5" value="3" class="slider" id="myRange">
+        <button id="moods-form-button">Save!</button>
+      </section>
+      <section id="moods-table">
+        <header>
+          <h2>Timestamp</h2>
+          <h2>Mood</h2>
+          <h2>Value</h2>
+        </header>
+        <section id="moods-table-data">
+          <div>
+            <p>No data yet.</p>
+          </div>
+        </section>
+      </section>
+    </section>
+  </main>
+  <footer>&copy; UCLL 2022</footer>
+  <script src="./code.js"></script>
+</body>
+
+</html>
