@@ -67,10 +67,20 @@ main {
     background-color: white;
     padding: 0.2em;
     display: flex;
+    align-items: center;
+}
+
+#moods-table-data > div > p {
+    padding: 0.5em;
+    margin: 0;
+}
+
+#moods-table-data > div > p > img {
+    width: 1.6em;
 }
 
 #moods-table-data > div:nth-of-type(even) {
-    background-color: rgb(250, 250, 250);
+    background-color: #EBF5FF;
 }
 
 #moods-table-data > div > p {
