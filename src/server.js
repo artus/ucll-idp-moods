@@ -66,6 +66,11 @@ app.delete("/moods/:name", async (req, res) => {
   }
 })
 
+app.get('/ping', (req, res) => {
+  res.send("ok");
+})
+
 app.listen(port, () => {
   console.log(`Running on port ${port}`);
 });
+
